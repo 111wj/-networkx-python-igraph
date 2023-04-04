@@ -1,0 +1,2 @@
+学习networkx或python-igraph：
+pip install 库包名 -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
