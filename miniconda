@@ -3,3 +3,17 @@ pip install 库包名 -i http://pypi.douban.com/simple/ --trusted-host pypi.doub
 conda activate 環境
  pip install ipykernel
  > python -m ipykernel install --user --name python_igraph --display -name python_igraph
+
+anaconda 的conda启动jupyter notebook出现问题：
+一.conda install无法安装安装，提示 CondaSSLError: OpenSSL appears to be unavailable on this machine. OpenSSL is
+解决方法：
+
+1. 到你的anaconda的安装目录位置：比如 D:\ProgramData\Anaconda3\Library\bin，找到如下两个DLL的文件：
+
+libcrypto-1_1-x64.dll
+
+libssl-1_1-x64.dll
+
+复制到 D:\ProgramData\Anaconda3\DLLs
+
+3. 重启下你OK
